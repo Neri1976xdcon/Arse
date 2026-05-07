@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ARSE</string>
+    <string name="escanear_btn">ESCANEAR ARCHIVO</string>
+    <string name="registrar_btn">REGISTRAR CLASE</string>
+    <string name="tus_clases">Tus clases</string>
+    <string name="registrar_clase">Registrar Clase</string>
+    <string name="grupos">Grupos</string>
+    <string name="alumnos">Alumnos</string>
+    <string name="crear_grupo">CREAR GRUPO</string>
+    <string name="todos_los_alumnos">TODOS LOS ALUMNOS</string>
+    <string name="sin_alumnos_registrados">SIN ALUMNOS REGISTRADOS</string>
+    <string name="sin_grupos_registrados">SIN GRUPOS REGISTRADOS</string>
+    <string name="registrar_alumno">REGISTRAR ALUMNO</string>
+    <string name="comenzar_por_apellidos">(comenzar por apellidos)</string>
+    <string name="registrar">REGISTRAR</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="nombre_alumno">NOMBRE ALUMNO</string>
+    <string name="registrar_grupo">REGISTRAR GRUPO</string>
+    <string name="grupo">Grupo:</string>
+    <string name="ingrese_grupo">Ingrese grupo</string>
+    <string name="aula">Aula:</string>
+    <string name="nueva_aula">Nueva</string>
+    <string name="seleccionar_existente">Seleccionar</string>
+    <string name="aula_et">Aula</string>
+    <string name="alumnos_agregar_grupo">Alumnos:</string>
+    <string name="confirmar">CONFIRMAR</string>
+    <string name="seleccionar_grupo">SELECCIONAR GRUPO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textoDia"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:gravity="center"
+    android:text="02"
+    android:textSize="15sp"
+    android:textColor="@color/negro"
+    android:fontFamily="@font/montserrat_extra_bold"
+    android:background="@drawable/fondo_redondeado"/>

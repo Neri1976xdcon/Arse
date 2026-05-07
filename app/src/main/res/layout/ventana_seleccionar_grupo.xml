@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/fondo_dialog">
+
+    <TextView
+        android:text="@string/seleccionar_grupo"
+        android:fontFamily="@font/montserrat_extra_bold_italic"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSeleccionargrupo"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:paddingVertical="5dp"/>
+
+</LinearLayout>

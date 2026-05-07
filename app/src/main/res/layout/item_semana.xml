@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <!-- NOMBRE SEMANA -->
+    <TextView
+        android:id="@+id/textoSemana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semana 1"
+        android:textColor="@color/grisPalidoOscuro"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:background="@drawable/fondo_redondeado"
+        android:backgroundTint="@color/grisPalidoClaro"
+        android:layout_marginBottom="7dp"/>
+
+    <!-- CONTENEDOR DÍAS -->
+    <LinearLayout
+        android:id="@+id/contenedorDias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- LUNES -->
+        <FrameLayout
+            android:id="@+id/lunes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"/>
+
+        <!-- MARTES -->
+        <FrameLayout
+            android:id="@+id/martes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"/>
+
+        <!-- MIERCOLES -->
+        <FrameLayout
+            android:id="@+id/miercoles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"/>
+
+        <!-- JUEVES -->
+        <FrameLayout
+            android:id="@+id/jueves"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"/>
+
+        <!-- VIERNES -->
+        <FrameLayout
+            android:id="@+id/viernes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"/>
+
+        <!-- SABADO -->
+        <FrameLayout
+            android:id="@+id/sabado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

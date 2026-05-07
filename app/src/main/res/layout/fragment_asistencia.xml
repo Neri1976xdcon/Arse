@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Asistencia">
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:text="ALUMNOS"
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:gravity="center"
+                android:textColor="@color/blanco"
+                android:background="@color/azulArse"/>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollHeader"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/headerFechas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"/>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="%"
+                android:fontFamily="@font/montserrat_extra_bold_italic"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/blanco"
+                android:background="@color/azulArse"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerAlumnos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancelarCambiosAsistencia"
+                android:text="CANCELAR"
+                android:textColor="@drawable/texto_seleccion_cancelacion"
+                android:background="@color/blanco"
+                android:fontFamily="@font/montserrat_extra_bold_italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/guardarAsistencias"
+                android:text="GUARDAR"
+                android:textColor="@drawable/texto_seleccion_registro"
+                android:background="@color/blanco"
+                android:fontFamily="@font/montserrat_extra_bold_italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+    <!-- 🔲 TARJETA CENTRAL -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center"
+        android:background="@color/blanco"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRO DE ASISTENCIA ACTIVO"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- BOTONES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancelarRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCELAR"
+                android:background="@android:color/transparent"
+                android:stateListAnimator="@null"
+                android:fontFamily="@font/montserrat_extra_bold_italic"
+                android:textColor="@drawable/texto_seleccion_cancelacion"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnComenzar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMENZAR"
+                android:fontFamily="@font/montserrat_extra_bold_italic"
+                android:background="@android:color/transparent"
+                android:stateListAnimator="@null"
+                android:textColor="@drawable/texto_seleccion_registro"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    </FrameLayout>

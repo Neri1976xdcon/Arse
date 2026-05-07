@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="negro">#FF000000</color>
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="azulArse">#4e89ff</color>
+    <color name="verdeDrawer">#15c9a4</color>
+    <color name="grisPalidoClaro">#E0EFF8</color>
+    <color name="grisPalidoOscuro">#607D8B</color>
+    <color name="naranja">#F29B30</color>
+    <color name="verdeClaro">#CCFFE0</color>
+    <color name="verdeOscuro">#3CA994</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="amarilloClaro">#FFF7C5</color>
+    <color name="rojoError">#DB0D38</color>
+    <color name="rojoCalido">#F2A0A0</color>
+    <color name="azulOscuro">#3C5970</color>
+    <color name="naranjaOscuro">#FF5403</color>
+    <color name="amarilloOscuro">#FFB800</color>
+</resources>

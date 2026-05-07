@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemAlumnoCumplimiento"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingVertical="5dp"
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/fondo_redondeado"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="15dp">
+
+    <ImageView
+        android:src="@drawable/icono_alumno"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="5dp"/>
+
+    <TextView
+        android:id="@+id/nombreAlumno"
+        android:text="@string/nombre_alumno"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="10sp"
+        android:textColor="@color/grisPalidoOscuro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+
+    <TextView
+        android:id="@+id/infoAlumno"
+        android:textSize="17sp"
+        android:textColor="@color/grisPalidoOscuro"
+        android:fontFamily="@font/montserrat_extra_bold_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

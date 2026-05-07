@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_margin="8dp"
+    android:padding="10dp"
+    android:background="@drawable/fondo_tema"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <View
+        android:id="@+id/vColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circulo_color"/>
+</FrameLayout>
