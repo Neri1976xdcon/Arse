@@ -1,5 +1,5 @@
 package BD;
-
+// TODO: Optimizar tiempos de respuesta SQL
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
