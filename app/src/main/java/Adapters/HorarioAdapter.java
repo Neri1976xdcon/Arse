@@ -30,7 +30,7 @@ import java.util.function.Consumer;
 
 import Clases.HorarioDia;
 import Entity.Dia;
-
+//no se aceotan empalmes 
 public class HorarioAdapter
         extends RecyclerView.Adapter<HorarioAdapter.HorarioViewHolder> {
 
