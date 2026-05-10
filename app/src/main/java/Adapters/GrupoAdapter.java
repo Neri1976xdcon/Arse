@@ -16,6 +16,8 @@ import java.util.List;
 
 import Clases.GrupoItem;
 
+// Adaptador para mostrar y gestionar la selección de grupos en un RecyclerView
+
 public class GrupoAdapter extends RecyclerView.Adapter<GrupoAdapter.GrupoViewHolder> {
 
     private List<GrupoItem> lista;
@@ -49,7 +51,7 @@ public class GrupoAdapter extends RecyclerView.Adapter<GrupoAdapter.GrupoViewHol
     public void onBindViewHolder(@NonNull GrupoViewHolder holder, int position) {
 
         GrupoItem grupo = lista.get(position);
-
+        // Asigna los datos del objeto GrupoItem a los componentes visuales
         holder.nombre.setText(grupo.getNombre());
         holder.aula.setText(grupo.getAula());
         holder.total.setText(String.valueOf(grupo.getTotalAlumnos()));
@@ -65,6 +67,7 @@ public class GrupoAdapter extends RecyclerView.Adapter<GrupoAdapter.GrupoViewHol
             if (pos == RecyclerView.NO_POSITION) return;
 
             GrupoItem grupoActual = lista.get(pos);
+            // Si el usuario toca el grupo que ya estaba seleccionado, se deselecciona (Toggle)
 
             if (grupoSeleccionadoId == grupoActual.getId()) {
 
@@ -108,7 +111,8 @@ public class GrupoAdapter extends RecyclerView.Adapter<GrupoAdapter.GrupoViewHol
                 ? lista.get(posicionSeleccionada)
                 : null;
     }
-
+      
+      // Permite actualizar la lista de grupos desde fuera (ej. después de una búsqueda o carga de BD)
     public void actualizarLista(List<GrupoItem> nuevaLista) {
         this.lista = nuevaLista;
 

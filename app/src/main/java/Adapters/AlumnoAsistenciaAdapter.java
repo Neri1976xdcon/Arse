@@ -24,6 +24,8 @@ import java.util.Map;
 
 import Entity.Alumno;
 
+// Adaptador encargado de vincular los datos de asistencia de los alumnos con la interfaz de usuario
+
 public class AlumnoAsistenciaAdapter
         extends RecyclerView.Adapter<AlumnoAsistenciaAdapter.ViewHolder> {
 
