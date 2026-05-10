@@ -29,7 +29,7 @@ public class AlumnoAdapter extends RecyclerView.Adapter<AlumnoAdapter.AlumnoView
         this.listaAlumnos = listaAlumnos;
     }
 
-
+    // Ajuste de márgenes para pantallas pequeñas
     public void setModoAccion(String modo) {
         this.modoAccion = modo;
         notifyDataSetChanged();
