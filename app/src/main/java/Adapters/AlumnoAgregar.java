@@ -1,7 +1,7 @@
 package Adapters;
 
 import Clases.Alumno;
-
+//agregar
 public class AlumnoAgregar extends Alumno {
     boolean agregado;
 
