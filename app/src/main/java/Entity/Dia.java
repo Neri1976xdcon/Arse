@@ -14,7 +14,6 @@ public class Dia {
 
     private String nombre;
 
-    // 🔥 IMPORTANTE: constructor sin id (Room lo genera)
     public Dia(String nombre) {
         this.nombre = nombre;
     }
